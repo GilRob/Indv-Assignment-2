@@ -14,6 +14,7 @@ public class BulletController : MonoBehaviour
     void Start()
     {
         boundary.Top = 2.45f;
+        //Access the script because it would not let me attach it to the prefab
         bulletManager = GameObject.FindObjectOfType<BulletPoolManager>();
     }
 
@@ -38,8 +39,6 @@ public class BulletController : MonoBehaviour
             //TODO: ResetBullet function which will return the bullet to the pool
 
             bulletManager.ResetBullet(this.gameObject);
-
-            //Destroy(this.gameObject);
         }
     }
 }

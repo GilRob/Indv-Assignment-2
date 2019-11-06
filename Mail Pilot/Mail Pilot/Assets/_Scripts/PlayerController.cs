@@ -121,10 +121,13 @@ public class PlayerController : MonoBehaviour
                 //TODO: bullet object. 
                 //TODO: Ensure you position the new bullet at the bulletSpawn position
 
+                //Create temp object
                 GameObject firingBullet;
 
+                //Get the bullet and assign to temp object
                 firingBullet = poolManager.GetBullet();
 
+                //Set the bullet to fire from bullet spawn position
                 firingBullet.transform.position = bulletSpawn.position;
             }
 
